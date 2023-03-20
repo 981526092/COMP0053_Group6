@@ -1,7 +1,8 @@
 import numpy as np
 from keras import losses
-from keras.callbacks import LearningRateScheduler
+from keras.callbacks import LearningRateScheduler,EarlyStopping
 from keras import metrics
+from keras.layers import Lambda
 from keras.optimizers import Adam
 from matplotlib import pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
@@ -47,6 +48,24 @@ def ensemble_predictions(prediction1, prediction2, strategy='average', weights=N
 
     return ensemble
 
+def crop(dimension, start, end):
+    # Thanks to marc-moreaux on Github page:https://github.com/keras-team/keras/issues/890 who created this beautiful and sufficient function: )
+    # Crops (or slices) a Tensor on a given dimension from start to end
+    # example : to crop tensor x[:, :, 5:10]
+    # call slice(2, 5, 10) as you want to crop on the second dimension
+    def func(x):
+        if dimension == 0:
+            return x[start: end]
+        if dimension == 1:
+            return x[:, start: end]
+        if dimension == 2:
+            return x[:, :, start: end]
+        if dimension == 3:
+            return x[:, :, :, start: end]
+        if dimension == 4:
+            return x[:, :, :, :, start: end]
+    return Lambda(func)
+
 def plot_history(history):
     # Plot training & validation accuracy values
     plt.figure(figsize=(12, 6))
@@ -76,13 +95,14 @@ def schedule(epoch, lr):
         return lr * 0.95
 
 def model_pipeline(model, X_train, y_train, X_valid, y_valid, epoch=50, save_model=False,print_results=True):
-    initial_learning_rate = 0.005
+    initial_learning_rate = 0.0005
     optimizer = Adam(lr=initial_learning_rate)
 
     model.compile(loss=losses.BinaryFocalCrossentropy(), optimizer=optimizer, metrics=[metrics.binary_accuracy])
 
     # Initialize the LearningRateScheduler callback
     lr_scheduler = LearningRateScheduler(schedule, verbose=1)
+    early_stopping = EarlyStopping(monitor='loss', patience=5)
 
     # Train the model with both callbacks
     H = model.fit(
@@ -92,7 +112,7 @@ def model_pipeline(model, X_train, y_train, X_valid, y_valid, epoch=50, save_mod
         epochs=epoch,
         validation_data=(X_valid, y_valid),
         shuffle=False,
-        callbacks=[lr_scheduler],
+        callbacks=[lr_scheduler,early_stopping],
     )
     if save_model:
         model.save_weights('model' + '.hdf5')
