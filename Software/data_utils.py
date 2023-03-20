@@ -118,3 +118,9 @@ def load_data(filenames, data_set, downsampling = False, angle_energy = False,au
         X_train_concat, y_train_concat = augment_data(X_train_concat, y_train_concat)
 
     return X_train_concat, y_train_concat
+
+def flatten_data(X,y):
+    X_return = X.reshape((X.shape[0],X.shape[1]*X.shape[2]))
+    Y_return = np.argmax(y, axis=1)
+    return X_return, Y_return
+

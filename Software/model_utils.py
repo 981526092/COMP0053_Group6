@@ -6,7 +6,31 @@ from keras.optimizers import Adam
 from matplotlib import pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 
+def ensemble_predictions(prediction1, prediction2, weights=None):
+    """
+    Function to ensemble two predictions using averaging method.
 
+    :param prediction1: list or array-like object containing the first set of predictions
+    :param prediction2: list or array-like object containing the second set of predictions
+    :param weights: list or array-like object containing the weights for each set of predictions, default is None
+    :return: list containing the ensembled predictions
+    """
+    if not weights:
+        # If no weights are given, assume equal weights for both predictions
+        weights = [0.5, 0.5]
+
+    if len(prediction1) != len(prediction2) or len(weights) != 2:
+        raise ValueError("Both predictions must have the same length, and weights must have a length of 2.")
+
+    ensemble = []
+    for pred1, pred2 in zip(prediction1, prediction2):
+        ensemble_pred = pred1 * weights[0] + pred2 * weights[1]
+        ensemble.append(ensemble_pred)
+
+
+    ensemble = np.argmax(ensemble,axis=1)
+
+    return ensemble
 def plot_history(history):
     # Plot training & validation accuracy values
     plt.figure(figsize=(12, 6))
