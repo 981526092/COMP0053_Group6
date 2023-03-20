@@ -6,31 +6,47 @@ from keras.optimizers import Adam
 from matplotlib import pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 
-def ensemble_predictions(prediction1, prediction2, weights=None):
+def ensemble_predictions(prediction1, prediction2, strategy='average', weights=None, rule=None):
     """
-    Function to ensemble two predictions using averaging method.
+    Function to ensemble two predictions using various methods.
 
-    :param prediction1: list or array-like object containing the first set of predictions
-    :param prediction2: list or array-like object containing the second set of predictions
+    :param prediction1: array-like object containing the first set of predictions (n x 2)
+    :param prediction2: array-like object containing the second set of predictions (n x 2)
+    :param strategy: string specifying the ensembling strategy, options are 'average', 'product', 'max', 'rule', default is 'average'
     :param weights: list or array-like object containing the weights for each set of predictions, default is None
+    :param rule: callable function for rule-based ensembling, only used if strategy='rule', default is None
     :return: list containing the ensembled predictions
     """
+    prediction1, prediction2 = np.array(prediction1), np.array(prediction2)
+
     if not weights:
         # If no weights are given, assume equal weights for both predictions
         weights = [0.5, 0.5]
 
-    if len(prediction1) != len(prediction2) or len(weights) != 2:
-        raise ValueError("Both predictions must have the same length, and weights must have a length of 2.")
+    if prediction1.shape != prediction2.shape or len(weights) != 2:
+        raise ValueError("Both predictions must have the same shape, and weights must have a length of 2.")
 
-    ensemble = []
-    for pred1, pred2 in zip(prediction1, prediction2):
-        ensemble_pred = pred1 * weights[0] + pred2 * weights[1]
-        ensemble.append(ensemble_pred)
+    if strategy == 'average':
+        ensemble = prediction1 * weights[0] + prediction2 * weights[1]
 
+    elif strategy == 'product':
+        ensemble = prediction1 * prediction2
 
-    ensemble = np.argmax(ensemble,axis=1)
+    elif strategy == 'max':
+        ensemble = np.maximum(prediction1, prediction2)
+
+    elif strategy == 'rule':
+        if not rule or not callable(rule):
+            raise ValueError("A callable rule function is required for rule-based ensembling.")
+        ensemble = np.array([rule(pred1, pred2) for pred1, pred2 in zip(prediction1, prediction2)])
+
+    else:
+        raise ValueError("Invalid ensembling strategy. Options are 'average', 'product', 'max', or 'rule'.")
+
+    ensemble = np.argmax(ensemble, axis=1)
 
     return ensemble
+
 def plot_history(history):
     # Plot training & validation accuracy values
     plt.figure(figsize=(12, 6))
