@@ -1,29 +1,7 @@
 from scipy.io import loadmat
 import numpy as np
 from keras.utils import to_categorical
-from sklearn.utils import shuffle
-
-def jitter(X, y, std_dev):
-    noise = np.random.normal(0, std_dev, X.shape)
-    return X + noise, y
-
-def crop_new(X, y, probability):
-    mask = np.random.rand(*X.shape) < probability
-    return X * (1 - mask), y
-
-def augment_data(X, y):
-    X_jittered_1, y_jittered_1 = jitter(X, y, 0.05)
-    X_jittered_2, y_jittered_2 = jitter(X, y, 0.1)
-
-    X_cropped_1, y_cropped_1 = crop_new(X, y, 0.05)
-    X_cropped_2, y_cropped_2 = crop_new(X, y, 0.1)
-
-    X_augmented = np.concatenate((X, X_jittered_1, X_jittered_2, X_cropped_1, X_cropped_2), axis=0)
-    y_augmented = np.concatenate((y, y_jittered_1, y_jittered_2, y_cropped_1, y_cropped_2), axis=0)
-
-    X_augmented, y_augmented = shuffle(X_augmented, y_augmented, random_state=0)
-
-    return X_augmented, y_augmented
+from data_augmentation import augment_data
 
 def mode_threshold(list,threshold = 0.5):
     count = 0
@@ -35,7 +13,7 @@ def mode_threshold(list,threshold = 0.5):
     else:
         return 1
 
-def new_segment_data(data: np.ndarray, window_size: int = 180, overlap_ratio: float = 0.75, by_type: bool = True, min_frame: int = 12) -> np.ndarray:
+def segment_data(data: np.ndarray, window_size: int = 180, overlap_ratio: float = 0.75, by_type: bool = True, min_frame: int = 12) -> np.ndarray:
     assert data.shape[0] > 0
     assert window_size > 0
     assert 0 <= overlap_ratio < 1
@@ -116,7 +94,7 @@ def load_data(filenames, data_set, downsampling = False, angle_energy = False,au
             selected_data_list.append(traindata['data'])
 
     for i in range(len(selected_data_list)):
-        processed_data = new_segment_data(selected_data_list[i], window_size=180, overlap_ratio=0.75, by_type=True, min_frame=12)
+        processed_data = segment_data(selected_data_list[i], window_size=180, overlap_ratio=0.75, by_type=True, min_frame=12)
 
         if angle_energy:
             X_segmented = np.concatenate((processed_data[:,:,78:104], processed_data[:,:,66:70]), axis=2)
