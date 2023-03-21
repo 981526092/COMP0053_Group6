@@ -7,6 +7,7 @@ This repository contains the tutorials and code for Early (Feature-Level), Middl
 
 ## Tutorials
 
+- [Exploratory Data Analysis for EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain.ipynb)
 - [Pipeline for Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
 - [Pipeline for Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Middle_Fusion_Pipeline.ipynb)
 - [Pipeline for Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Late_Fusion_Pipeline.ipynb)
