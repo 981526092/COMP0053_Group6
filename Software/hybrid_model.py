@@ -1,5 +1,21 @@
 from keras import Sequential
 from keras.layers import LSTM, Dropout, Dense
+from keras.layers import concatenate, Conv1D, Softmax, multiply, Permute, Flatten
+from keras import Input, Model
+from keras.models import Sequential
+from keras.layers import Conv1D, LSTM, Dense, Dropout, TimeDistributed, BatchNormalization
+from keras.layers import Input, Conv1D, BatchNormalization, Activation, MaxPooling1D, Concatenate, Dense, AveragePooling1D
+from keras.models import Model
+from scipy.io import loadmat
+from keras.utils import to_categorical
+from keras.layers import *
+from keras.layers.core import *
+from keras.models import *
+from keras.optimizers import *
+from keras.backend import sum
+import numpy as np
+from scipy.stats import mode
+from keras.models import Sequential
 from re import U
 
 def build_bi_cnn_banet_model():
