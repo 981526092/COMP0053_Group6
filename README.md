@@ -9,7 +9,7 @@ This repository contains the code and pipelines for Early (Feature-Level), Middl
 - [Pipeline for Middle (Model-Level) Fusion Models](../Software/Middle_Fusion_Pipeline.ipynb)
 - [Pipeline for Late (Decision-Level) Fusion Models](../Software/Late_Fusion_Pipeline.ipynb)
 - [Pipeline for Hybrid (Middle & Late) Fusion Models](../Software/Hybrid_Fusion_Pipeline.ipynb)
-- [Pipeline for Cross Validation](../Software/CV_Pipeline.ipynb)
+- [Pipeline for Cross Validation]https://github.com/981526092/COMP0053_Group6/blob/main/Software/CV_Pipeline.ipynb
 
 ## Code
 
