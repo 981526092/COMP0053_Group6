@@ -17,7 +17,7 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 
 **sEMG**
 
-- [Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
+[Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
 
 ## Energy & Angle EmoPain Dataset with features:
 
@@ -30,7 +30,7 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 
 **sEMG**
 
-- [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AngleData)
+[New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AngleData)
 
 ## ALL EmoPain Dataset with features:
 
@@ -45,7 +45,7 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 
 **X,Y,Z Coordinates**
 
-- [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
+[New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
 ## Tutorials
 
