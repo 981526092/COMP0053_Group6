@@ -4,19 +4,13 @@ from sklearn.model_selection import LeavePOut, GroupKFold, LeaveOneOut, Stratifi
 from keras.models import clone_model
 from model_utils import model_pipeline
 from data_utils import load_data
-def cross_validation(model,train_participant_num,valid_participant_num,cv_selection= 'LeavePOut',p = 15,epoch = 50,n_splits=5):
+def cross_validation(model,train_participant_num,valid_participant_num,cv_selection= 'LeavePOut',p = 15,epoch = 50):
     if cv_selection == 'LeavePOut':
         cv_method = LeavePOut(p=p)
-    elif cv_selection == 'GroupKFold':
-        cv_method = GroupKFold(n_splits=n_splits)
     elif cv_selection == 'LeaveOneOut':
         cv_method = LeaveOneOut()
-    elif cv_selection == 'StratifiedKFold':
-        cv_method = StratifiedKFold(n_splits=n_splits)
-    elif cv_selection == 'TimeSeriesSplit':
-        cv_method = TimeSeriesSplit(n_splits=n_splits)
     else:
-        raise ValueError("Invalid cross-validation selection. Choose from 'LeavePOut', 'GroupKFold', 'LeaveOneOut', 'StratifiedKFold', or 'TimeSeriesSplit'.")
+        raise ValueError("Invalid cross-validation selection. Choose from 'LeavePOut', 'LeaveOneOut'.")
 
     scores = []
     best_f1 = 0
