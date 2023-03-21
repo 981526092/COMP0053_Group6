@@ -9,11 +9,24 @@ This repository contains the tutorials and code for Exploratory Data Analysis(ED
 
 https://wangchongyang.ai/EmoPainChallenge2020/
 
-## Original EmoPain Dataset with X,Y,Z Coordinates & sEMG features
+## Original EmoPain Dataset with features:
+**X,Y,Z Coordinates**
+**sEMG**
 
 - [Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
 
-## New EmoPain Dataset with Energy & Angle & sEMG features & X,Y,Z Coordinates
+## Energy & Angle EmoPain Dataset with 
+**Energy**
+**Angle**
+**sEMG**
+
+- [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AngleData)
+
+## ALL EmoPain Dataset with 
+**Energy**
+**Angle**
+**sEMG**
+**X,Y,Z Coordinates**
 
 - [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
