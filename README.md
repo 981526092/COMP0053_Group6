@@ -5,9 +5,17 @@
 
 This repository contains the tutorials and code for Exploratory Data Analysis(EDA), Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid (Middle & Late) Fusion Models, as well as cross-validation methods used in our project. 
 
-## EmoPain Dataset
+## EmoPain Dataset Website Link
 
 https://wangchongyang.ai/EmoPainChallenge2020/
+
+## Original EmoPain Dataset with X,Y,Z Coordinates & sEMG features
+
+- [Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
+
+## New EmoPain Dataset with Energy & Angle & sEMG features & X,Y,Z Coordinates
+
+- [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
 ## Tutorials
 
