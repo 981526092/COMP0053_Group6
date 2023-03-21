@@ -17,6 +17,7 @@ import numpy as np
 from scipy.stats import mode
 from keras.models import Sequential
 from re import U
+from model_utils import crop
 
 def build_bi_cnn_banet_model():
     '''
