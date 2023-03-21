@@ -12,7 +12,7 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 ## Original EmoPain Dataset:
 **Features:**
 
-X,Y,Z Coordinates/sEMG
+X,Y,Z Coordinates / sEMG
 
 **Link:**
 
@@ -21,7 +21,7 @@ X,Y,Z Coordinates/sEMG
 ## Energy & Angle EmoPain Dataset:
 **Features:**
 
-Energy/Angle/sEMG
+Energy / Angle / sEMG
 
 **Link:**
 
@@ -31,7 +31,7 @@ Energy/Angle/sEMG
 
 **Features:**
 
-Energy/Angle/sEMG/X,Y,Z Coordinates**
+Energy / Angle / sEMG / X,Y,Z Coordinates
 
 **Link:**
 
