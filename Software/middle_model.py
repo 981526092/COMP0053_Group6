@@ -3,6 +3,7 @@ from keras.layers import LSTM, Dropout, Dense, Flatten, MaxPooling1D, Activation
     Concatenate
 from model_utils import crop
 
+# Create a 1D CNN model with two parallel branches and a fusion layer
 def cnn_normal(input_shape,num_classes):
     input_data = Input(input_shape)
 

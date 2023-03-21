@@ -7,17 +7,9 @@ from keras.optimizers import Adam
 from matplotlib import pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 
+# Ensemble two sets of predictions using different strategies
 def ensemble_predictions(prediction1, prediction2, strategy='average', weights=None, rule=None):
-    """
-    Function to ensemble two predictions using various methods.
 
-    :param prediction1: array-like object containing the first set of predictions (n x 2)
-    :param prediction2: array-like object containing the second set of predictions (n x 2)
-    :param strategy: string specifying the ensembling strategy, options are 'average', 'product', 'max', 'rule', default is 'average'
-    :param weights: list or array-like object containing the weights for each set of predictions, default is None
-    :param rule: callable function for rule-based ensembling, only used if strategy='rule', default is None
-    :return: list containing the ensembled predictions
-    """
     prediction1, prediction2 = np.array(prediction1), np.array(prediction2)
 
     if not weights:
@@ -48,11 +40,9 @@ def ensemble_predictions(prediction1, prediction2, strategy='average', weights=N
 
     return ensemble
 
+# Crop a tensor along a given dimension between start and end indices
 def crop(dimension, start, end):
-    # Thanks to marc-moreaux on Github page:https://github.com/keras-team/keras/issues/890 who created this beautiful and sufficient function: )
-    # Crops (or slices) a Tensor on a given dimension from start to end
-    # example : to crop tensor x[:, :, 5:10]
-    # call slice(2, 5, 10) as you want to crop on the second dimension
+    #marc-moreaux on Github page:https://github.com/keras-team/keras/issues/890)
     def func(x):
         if dimension == 0:
             return x[start: end]
@@ -66,6 +56,7 @@ def crop(dimension, start, end):
             return x[:, :, :, :, start: end]
     return Lambda(func)
 
+# Plot the training history of a model
 def plot_history(history):
     # Plot training & validation accuracy values
     plt.figure(figsize=(12, 6))
@@ -88,12 +79,14 @@ def plot_history(history):
     plt.legend(['Train', 'Validation'], loc='upper left')
     plt.show()
 
+# Learning rate schedule for reducing learning rate during training
 def schedule(epoch, lr):
     if epoch < 10:
         return lr
     else:
         return lr * 0.95
 
+# Train and evaluate a model, with options to save and print results
 def model_pipeline(model, X_train, y_train, X_valid, y_valid, epoch=50, save_model=False,print_results=True):
     initial_learning_rate = 0.0005
     optimizer = Adam(lr=initial_learning_rate)

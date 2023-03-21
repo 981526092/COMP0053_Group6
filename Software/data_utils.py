@@ -4,10 +4,13 @@ from keras.utils import to_categorical
 from data_augmentation import augment_data
 import os
 
+# Function to get filenames without extension in the given directory
 def get_filenames_without_extension(directory):
     filenames = os.listdir(directory)
     filenames_without_extension = [os.path.splitext(filename)[0] for filename in filenames]
     return filenames_without_extension
+
+# Function to calculate the mode with a given threshold (default: 0.5) for a list of binary values (0 or 1)
 def mode_threshold(list,threshold = 0.5):
     count = 0
     for i in list:
@@ -18,6 +21,7 @@ def mode_threshold(list,threshold = 0.5):
     else:
         return 1
 
+# Function to segment data using sliding window segmentation
 def segment_data(data: np.ndarray, window_size: int = 180, overlap_ratio: float = 0.75, by_type: bool = True, min_frame: int = 12) -> np.ndarray:
     assert data.shape[0] > 0
     assert window_size > 0
@@ -83,6 +87,7 @@ def segment_data(data: np.ndarray, window_size: int = 180, overlap_ratio: float 
 
     return np.array(windows)
 
+# Function to load data and perform preprocessing
 def load_data(filenames, data_set, downsampling = False, angle_energy = False,augment = False):
     data_path = '../CoordinateData/'
     X_train_list = []
@@ -95,6 +100,9 @@ def load_data(filenames, data_set, downsampling = False, angle_energy = False,au
         if downsampling == True:
             if (len(count_table[0])) == 2:
                 selected_data_list.append(traindata['data'])
+                print(file_name + ' is selected to be used for training (downsampling)')
+            else:
+                print(file_name + ' is not selected to be used for training (downsampling)')
         else:
             selected_data_list.append(traindata['data'])
 
@@ -124,11 +132,13 @@ def load_data(filenames, data_set, downsampling = False, angle_energy = False,au
 
     return X_train_concat, y_train_concat
 
+# Function to flatten input data (X) and convert one-hot encoded labels (y) back to integer class labels
 def flatten_data(X,y):
     X_return = X.reshape((X.shape[0],X.shape[1]*X.shape[2]))
     Y_return = np.argmax(y, axis=1)
     return X_return, Y_return
 
+# Function to load raw data for specified participant numbers and data type
 def load_raw_data(participant_num, data_type):
     data = []
     for i in participant_num:

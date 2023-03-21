@@ -4,7 +4,11 @@ from sklearn.model_selection import LeavePOut, GroupKFold, LeaveOneOut, Stratifi
 from keras.models import clone_model
 from model_utils import model_pipeline
 from data_utils import load_data
+
+# Perform cross-validation and return the scores and best model
 def cross_validation(model,train_participant_num,valid_participant_num,cv_selection= 'LeavePOut',p = 15,epoch = 50):
+
+    # Choose cross-validation method based on the input parameter
     if cv_selection == 'LeavePOut':
         cv_method = LeavePOut(p=p)
     elif cv_selection == 'LeaveOneOut':
@@ -17,6 +21,7 @@ def cross_validation(model,train_participant_num,valid_participant_num,cv_select
     best_model = None
     X_validation, y_validation = load_data(valid_participant_num, data_set="validation")
 
+    # Iterate through the cross-validation splits
     for train, valid in cv_method.split(train_participant_num):
         train_participants = [train_participant_num[i] for i in train]
         valid_participants = [train_participant_num[i] for i in valid]
@@ -24,6 +29,7 @@ def cross_validation(model,train_participant_num,valid_participant_num,cv_select
         x_train,y_train = load_data(train_participants,data_set="train")
         x_valid,y_valid = load_data(valid_participants,data_set="train")
 
+        # Concatenate the validation data to the training data
         x_valid = np.concatenate((X_validation,x_valid),axis=0)
         y_valid = np.concatenate((y_validation,y_valid),axis=0)
 
@@ -43,6 +49,7 @@ def cross_validation(model,train_participant_num,valid_participant_num,cv_select
 
     return np.array(scores), best_model
 
+# Compute the confusion matrix for binary classification
 def confusion_matrix_binary(y_true, y_pred):
     cm = np.zeros((2, 2), dtype=int)
 
@@ -51,6 +58,7 @@ def confusion_matrix_binary(y_true, y_pred):
 
     return cm
 
+# Compute binary classification metrics from scratch
 def binary_classification_metrics_from_scratch(y_true, y_pred):
     cm = confusion_matrix_binary(y_true, y_pred)
 
@@ -68,6 +76,7 @@ def binary_classification_metrics_from_scratch(y_true, y_pred):
 
     return cm, accuracy, macro_precision, macro_recall, macro_f1
 
+# Print a classification report with various metrics
 def print_classification_report(y_true, y_pred):
     cm, accuracy, macro_precision, macro_recall, macro_f1 = binary_classification_metrics_from_scratch(y_true, y_pred)
 
