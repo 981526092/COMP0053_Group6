@@ -1,7 +1,9 @@
 # COMP0053_Group6
 
 **This project task is Chronic-Pain Protective Behaviour Detection for the EmoPain Dataset.**
-This repository contains the code and pipelines for Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid Fusion Models, as well as cross-validation methods used in our project. 
+
+
+This repository contains the tutorials and code for Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid Fusion Models, as well as cross-validation methods used in our project. 
 
 ## Tutorials
 
