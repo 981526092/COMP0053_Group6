@@ -7,6 +7,7 @@ This repository contains the tutorials and code for Early (Feature-Level), Middl
 
 ## Tutorials
 
+- [Exploratory Data Analysis(EDA) for EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain.ipynb)
 - [Pipeline for Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
 - [Pipeline for Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Middle_Fusion_Pipeline.ipynb)
 - [Pipeline for Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Late_Fusion_Pipeline.ipynb)
@@ -20,7 +21,7 @@ This repository contains the tutorials and code for Early (Feature-Level), Middl
 - [Late (Decision-Level) Fusion Models code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/late_model.py)
 - [Hybrid (Middle & Late) Fusion Models code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/hybrid_model.py)
 - [Model Pipeline code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/model_utils.py)
-- [Cross Validation code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/evaluation_utils.py)
+- [Cross Validation & Metrics code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/evaluation_utils.py)
 - [Data Loader & Preprocessor code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_utils.py)
 - [Data visualisation code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
 - [Data augmentation code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
