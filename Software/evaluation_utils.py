@@ -1,17 +1,29 @@
 import numpy as np
 from sklearn.metrics import f1_score
-from sklearn.model_selection import LeavePOut
+from sklearn.model_selection import LeavePOut, GroupKFold, LeaveOneOut, StratifiedKFold, TimeSeriesSplit
 from keras.models import clone_model
 from model_utils import model_pipeline
 from data_utils import load_data
-def LPSO_cross_validation(model, train_participant_num,valid_participant_num,p = 15,epoch = 50):
-    loo = LeavePOut(p=p)
+def cross_validation(model,train_participant_num,valid_participant_num,cv_selection= 'LeavePOut',p = 15,epoch = 50,n_splits=5):
+    if cv_selection == 'LeavePOut':
+        cv_method = LeavePOut(p=p)
+    elif cv_selection == 'GroupKFold':
+        cv_method = GroupKFold(n_splits=n_splits)
+    elif cv_selection == 'LeaveOneOut':
+        cv_method = LeaveOneOut()
+    elif cv_selection == 'StratifiedKFold':
+        cv_method = StratifiedKFold(n_splits=n_splits)
+    elif cv_selection == 'TimeSeriesSplit':
+        cv_method = TimeSeriesSplit(n_splits=n_splits)
+    else:
+        raise ValueError("Invalid cross-validation selection. Choose from 'LeavePOut', 'GroupKFold', 'LeaveOneOut', 'StratifiedKFold', or 'TimeSeriesSplit'.")
+
     scores = []
     best_f1 = 0
     best_model = None
     X_validation, y_validation = load_data(valid_participant_num, data_set="validation")
 
-    for train, valid in loo.split(train_participant_num):
+    for train, valid in cv_method.split(train_participant_num):
         train_participants = [train_participant_num[i] for i in train]
         valid_participants = [train_participant_num[i] for i in valid]
 
