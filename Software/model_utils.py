@@ -102,7 +102,7 @@ def model_pipeline(model, X_train, y_train, X_valid, y_valid, epoch=50, save_mod
 
     # Initialize the LearningRateScheduler callback
     lr_scheduler = LearningRateScheduler(schedule, verbose=1)
-    early_stopping = EarlyStopping(monitor='loss', patience=5)
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5)
 
     # Train the model with both callbacks
     H = model.fit(
