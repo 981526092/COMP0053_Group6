@@ -5,21 +5,9 @@
 
 This repository contains the tutorials and code for Exploratory Data Analysis(EDA), Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid (Middle & Late) Fusion Models, as well as cross-validation methods used in our project. 
 
-**EmoPain Dataset:**
+## EmoPain Dataset
 
 https://wangchongyang.ai/EmoPainChallenge2020/
-
-**Related References:**
-
-[1] Aung et al. 2014. ‘Automatic recognition of fear-avoidance behavior in chronic pain physical rehabilitation’. (https://dl.acm.org/citation.cfm?id=2686916) 
-
-[2] Aung et al. 2016. ‘The Automatic Detection of Chronic Pain-Related Expression: Requirements, Challenges and the Multimodal EmoPain Dataset’. (https://ieeexplore.ieee.org/abstract/document/7173007) 
-
-[3] Wang et al. 2021. ‘Chronic-Pain Protective Behavior Detection with Deep Learning’. ACM HEALTH. (https://dl.acm.org/doi/abs/10.1145/3463508). 
-
-[4] Wang et al. 2021. ‘Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data’. IMWUT. (https://dl.acm.org/doi/abs/10.1145/3449068). 
-
-...
 
 ## Tutorials
 
@@ -41,3 +29,16 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 - [Data Loader & Preprocessor code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_utils.py)
 - [Data visualisation code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
 - [Data augmentation code](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
+
+## Related References
+
+[1] Aung et al. 2014. ‘Automatic recognition of fear-avoidance behavior in chronic pain physical rehabilitation’. (https://dl.acm.org/citation.cfm?id=2686916) 
+
+[2] Aung et al. 2016. ‘The Automatic Detection of Chronic Pain-Related Expression: Requirements, Challenges and the Multimodal EmoPain Dataset’. (https://ieeexplore.ieee.org/abstract/document/7173007) 
+
+[3] Wang et al. 2021. ‘Chronic-Pain Protective Behavior Detection with Deep Learning’. ACM HEALTH. (https://dl.acm.org/doi/abs/10.1145/3463508). 
+
+[4] Wang et al. 2021. ‘Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data’. IMWUT. (https://dl.acm.org/doi/abs/10.1145/3449068). 
+
+...
+
