@@ -42,3 +42,39 @@ def cross_validation(model,train_participant_num,valid_participant_num,cv_select
             best_model.set_weights(model.get_weights())
 
     return np.array(scores), best_model
+
+def confusion_matrix_binary(y_true, y_pred):
+    cm = np.zeros((2, 2), dtype=int)
+
+    for t, p in zip(y_true, y_pred):
+        cm[int(t), int(p)] += 1
+
+    return cm
+
+def binary_classification_metrics_from_scratch(y_true, y_pred):
+    cm = confusion_matrix_binary(y_true, y_pred)
+
+    tp = np.diag(cm)
+    fp = np.sum(cm, axis=0) - tp
+    fn = np.sum(cm, axis=1) - tp
+
+    precision = tp / (tp + fp)
+    recall = tp / (tp + fn)
+    accuracy = np.trace(cm) / np.sum(cm)
+
+    macro_precision = np.mean(precision)
+    macro_recall = np.mean(recall)
+    macro_f1 = 2 * macro_precision * macro_recall / (macro_precision + macro_recall)
+
+    return cm, accuracy, macro_precision, macro_recall, macro_f1
+
+def print_classification_report(y_true, y_pred):
+    cm, accuracy, macro_precision, macro_recall, macro_f1 = binary_classification_metrics_from_scratch(y_true, y_pred)
+
+    print("Confusion Matrix:")
+    print(cm)
+    print()
+    print(f'Accuracy: {accuracy:.2f}')
+    print(f'Macro Precision: {macro_precision:.2f}')
+    print(f'Macro Recall: {macro_recall:.2f}')
+    print(f'Macro F1 Score: {macro_f1:.2f}')

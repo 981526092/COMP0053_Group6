@@ -2,7 +2,12 @@ from scipy.io import loadmat
 import numpy as np
 from keras.utils import to_categorical
 from data_augmentation import augment_data
+import os
 
+def get_filenames_without_extension(directory):
+    filenames = os.listdir(directory)
+    filenames_without_extension = [os.path.splitext(filename)[0] for filename in filenames]
+    return filenames_without_extension
 def mode_threshold(list,threshold = 0.5):
     count = 0
     for i in list:
@@ -123,4 +128,10 @@ def flatten_data(X,y):
     X_return = X.reshape((X.shape[0],X.shape[1]*X.shape[2]))
     Y_return = np.argmax(y, axis=1)
     return X_return, Y_return
+
+def load_raw_data(participant_num, data_type):
+    data = []
+    for i in participant_num:
+        data.append(loadmat("CoordinateData/"+data_type+"/"+i+".mat")['data'])
+    return np.concatenate(data, axis=0)
 
