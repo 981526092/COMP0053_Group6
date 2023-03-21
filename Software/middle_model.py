@@ -1,9 +1,5 @@
 from keras import Sequential, Input, Model
-from keras.layers import LSTM, Dropout, Dense, Flatten, MaxPooling1D, Activation, BatchNormalization, Conv1D, \
-<<<<<<< HEAD
-    Concatenate, concatenate, Softmax, multiply, Lambda, Permute
-=======
-    Concatenate
+from keras.layers import LSTM, Dropout, Dense, Flatten, MaxPooling1D, Activation, BatchNormalization, Conv1D
 from scipy.io import loadmat
 from keras.utils import to_categorical
 from keras.layers import *
@@ -14,7 +10,6 @@ from keras.backend import sum
 import numpy as np
 from scipy.stats import mode
 from keras.models import Sequential
->>>>>>> 8f1ba25cda7ab4092865722ab8033cc036776476
 from model_utils import crop
 from re import U
 
