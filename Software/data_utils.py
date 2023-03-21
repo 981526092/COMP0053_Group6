@@ -132,6 +132,6 @@ def flatten_data(X,y):
 def load_raw_data(participant_num, data_type):
     data = []
     for i in participant_num:
-        data.append(loadmat("CoordinateData/"+data_type+"/"+i+".mat")['data'])
+        data.append(loadmat("../CoordinateData/"+data_type+"/"+i+".mat")['data'])
     return np.concatenate(data, axis=0)
 
