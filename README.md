@@ -11,11 +11,11 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 
 ## Original EmoPain Dataset with X,Y,Z Coordinates & sEMG features
 
-- [Original EmoPain Datasett](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
+- [Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
 
 ## New EmoPain Dataset with Energy & Angle & sEMG features & X,Y,Z Coordinates
 
-- [New EmoPain Datasett](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
+- [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
 ## Tutorials
 
