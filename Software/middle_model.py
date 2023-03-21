@@ -1,12 +1,12 @@
 from keras import Sequential, Input, Model
 from keras.layers import LSTM, Dropout, Dense, Flatten, MaxPooling1D, Activation, BatchNormalization, Conv1D, \
-    Concatenate
+    Concatenate, concatenate, Softmax, multiply, Lambda, Permute
 from model_utils import crop
 from re import U
 
 # Create a 1D CNN model with two parallel branches and a fusion layer
-def cnn_normal(input_shape,num_classes):
-    input_data = Input(input_shape)
+def cnn_normal():
+    input_data = Input((180,70))
 
     # Separating the inputs using the crop function
     input1 = crop(2, 0, 66)(input_data)
@@ -54,7 +54,7 @@ def cnn_normal(input_shape,num_classes):
     x2 = MaxPooling1D()(x2)
     x2 = Flatten()(x2)
 
-    out = Dense(num_classes)(x2)
+    out = Dense(2)(x2)
 
     model = Model(inputs=input_data, outputs=out)
     return model
