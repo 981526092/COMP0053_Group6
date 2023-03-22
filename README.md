@@ -31,7 +31,7 @@ Energy / Angle / sEMG
 
 **Features:**
 
-Energy / Angle / sEMG / X,Y,Z Coordinates
+X,Y,Z Coordinates / sEMG / Energy / Angle 
 
 **Link:**
 
