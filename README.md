@@ -44,12 +44,32 @@ X,Y,Z Coordinates / sEMG / Protective behavior (merged) label / Angle / Energy
 We implement EDA on EmoPain Dataset.
 
 - [Angle & Energy Modality Tranformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
+
+We implement X,Y,Z Coordinates to Angle & Energy Modality Tranformation on EmoPain Dataset.
+
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
+
+We run Early Fusion pipeline on Stacked-Deep-LSTM-Coordinate, Stacked-Deep-LSTM-Angle, Random Forest and Adaboost models.
+
 - [Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Middle_Fusion_Pipeline.ipynb)
+
+We run Middle Fusion pipeline on CNN-Normal-Coordinate, CNN-BANet-Coordinate, and LSTM-BANet-Coordinate models.
+
 - [Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Late_Fusion_Pipeline.ipynb)
+
+We run Late Fusion pipeline on RF-SVM Ensemble model with difference ensemble strategies.
+
 - [Advance Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
+
+We run Advance Late Fusion pipeline on Complex Ensembele models with the use of confusion & Metrics weights with difference ensemble strategies.
+
 - [Hybrid (Middle & Late) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Hybrid_Fusion_Pipeline.ipynb)
+
+We run Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
+
 - [Cross Validation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/CV_Pipeline.ipynb)
+
+We run example model on Leave-P-Out and Leave-One-Out Cross-Validation.
 
 ## Code
 
