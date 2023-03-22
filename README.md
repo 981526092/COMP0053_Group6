@@ -71,7 +71,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
   - We run example models on Leave-P-Out and Leave-One-Out Cross-Validation.
 
 - [SVM Perfomance Evaluation On difference Modalities trained](https://github.com/981526092/COMP0053_Group6/blob/main/Software/SVM_Performance_Pipeline.ipynb)
-  -We train the SVM model with different modalities and evaluate the performance 
+  - We train the SVM model with different modalities and evaluate the performance 
 
 ## Code
 
