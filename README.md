@@ -73,14 +73,32 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 ## Code
 
+## Code
+
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/early_model.py)
+  - Contains the implementation of Early Fusion models.
+
 - [Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/middle_model.py)
+  - Contains the implementation of Middle Fusion models.
+
 - [Hybrid (Middle & Late) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/hybrid_model.py)
+  - Contains the implementation of Hybrid Fusion models.
+
 - [Model Pipeline](https://github.com/981526092/COMP0053_Group6/blob/main/Software/model_utils.py)
+  - Provides utility functions for models.
+
 - [Cross Validation & Metrics](https://github.com/981526092/COMP0053_Group6/blob/main/Software/evaluation_utils.py)
+  - Implements various cross-validation techniques and performance metrics for model evaluation.
+
 - [Data Loader & Preprocessor](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_utils.py)
-- [Data visualisation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
-- [Data augmentation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
+  - Handles data loading and preprocessing.
+
+- [Data Visualization](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
+  - Provides functions for visualizing the dataset and model results.
+
+- [Data Augmentation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
+  - Implements data augmentation techniques for enhancing the dataset.
+
 
 ## Best Model Weights
 This directory store our best model weights in hdf5 format.
