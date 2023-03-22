@@ -1,75 +1,75 @@
 # COMP0053_Group6 EmoPain Challenge
 
-**This project task is Chronic-Pain Protective Behaviour Detection for the EmoPain Dataset.**
+**This project focuses on detecting chronic pain-related protective behavior using the EmoPain Dataset through various fusion techniques and deep learning models.**
 
-
-This repository contains the tutorials and code for Exploratory Data Analysis(EDA), Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid (Middle & Late) Fusion Models, as well as cross-validation methods used in our project. 
+This repository contains tutorials and code for Exploratory Data Analysis (EDA), Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid (Middle & Late) Fusion Models, as well as cross-validation methods used in our project.
 
 ## EmoPain Dataset Website Link
 
-https://wangchongyang.ai/EmoPainChallenge2020/
+[EmoPain Dataset](https://wangchongyang.ai/EmoPainChallenge2020/)
 
-## Original EmoPain Dataset:
+## Datasets
+
+### 1. Original EmoPain Dataset:
+
 **Features:**
 
-X,Y,Z Coordinates / sEMG / Protective behavior (merged) label 
-
-1-66 / 67-70 / 73
+- X, Y, Z Coordinates (1-66)
+- sEMG (67-70)
+- Protective behavior (merged) label (73)
 
 **Link:** [Original EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/CoordinateData)
 
-## Energy & Angle EmoPain Dataset:
+### 2. Energy & Angle EmoPain Dataset:
+
 **Features:**
 
-Angle / Energy / sEMG / Protective behavior (merged) label
-
-1-13 / 14-26 / 27-30 / 31
+- Angle (1-13)
+- Energy (14-26)
+- sEMG (27-30)
+- Protective behavior (merged) label (31)
 
 **Link:** [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AngleData)
 
-## ALL EmoPain Dataset:
+### 3. All EmoPain Dataset with features:
 
 **Features:**
 
-X,Y,Z Coordinates / sEMG / Protective behavior (merged) label / Angle / Energy
-
-1-66 / 67-70 / 73 / 79-91 / 92-104
+- X, Y, Z Coordinates (1-66)
+- sEMG (67-70)
+- Protective behavior (merged) label (73)
+- Angle (79-91)
+- Energy (92-104)
 
 **Link:** [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
+
 ## Tutorials
 
-- [Exploratory Data Analysis(EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
+- [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
+  - We implement EDA on the EmoPain Dataset.
 
-We implement EDA on EmoPain Dataset.
-
-- [Angle & Energy Modality Tranformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
-
-We implement X,Y,Z Coordinates to Angle & Energy Modality Tranformation on EmoPain Dataset.
+- [Angle & Energy Modality Transformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
+  - We implement X, Y, Z Coordinate to Angle & Energy Modality Transformation on the EmoPain Dataset.
 
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
-
-We run Early Fusion pipeline on Stacked-Deep-LSTM-Coordinate, Stacked-Deep-LSTM-Angle, Random Forest and Adaboost models.
+  - We run the Early Fusion pipeline on Stacked-Deep-LSTM-Coordinate, Stacked-Deep-LSTM-Angle, Random Forest, and AdaBoost models.
 
 - [Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Middle_Fusion_Pipeline.ipynb)
-
-We run Middle Fusion pipeline on CNN-Normal-Coordinate, CNN-BANet-Coordinate, and LSTM-BANet-Coordinate models.
+  - We run the Middle Fusion pipeline on CNN-Normal-Coordinate, CNN-BANet-Coordinate, and LSTM-BANet-Coordinate models.
 
 - [Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Late_Fusion_Pipeline.ipynb)
+  - We run the Late Fusion pipeline on RF-SVM Ensemble model with different ensemble strategies.
 
-We run Late Fusion pipeline on RF-SVM Ensemble model with difference ensemble strategies.
-
-- [Advance Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
-
-We run Advance Late Fusion pipeline on Complex Ensembele models with the use of confusion & Metrics weights with difference ensemble strategies.
+- [Advanced Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
+  - We run the Advanced Late Fusion pipeline on Complex Ensemble models, utilizing confusion & metric weights with different ensemble strategies.
 
 - [Hybrid (Middle & Late) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Hybrid_Fusion_Pipeline.ipynb)
-
-We run Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
+  - We run the Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
 
 - [Cross Validation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/CV_Pipeline.ipynb)
+  - We run example models on Leave-P-Out and Leave-One-Out Cross-Validation.
 
-We run example model on Leave-P-Out and Leave-One-Out Cross-Validation.
 
 ## Code
 
