@@ -40,6 +40,8 @@ X,Y,Z Coordinates / sEMG / Protective behavior (merged) label / Angle / Energy
 ## Tutorials
 
 - [Exploratory Data Analysis(EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
+We implement EDA on EmoPain Dataset.
+
 - [Angle & Energy Modality Tranformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
 - [Middle (Model-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Middle_Fusion_Pipeline.ipynb)
