@@ -27,7 +27,7 @@ Angle / Energy / sEMG / Protective behavior (merged) label
 
 **Link:** [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AngleData)
 
-## ALL EmoPain Dataset with features:
+## ALL EmoPain Dataset:
 
 **Features:**
 
