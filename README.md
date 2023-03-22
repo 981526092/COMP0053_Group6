@@ -23,9 +23,9 @@ X,Y,Z Coordinates / sEMG / Protective behavior (merged) label
 ## Energy & Angle EmoPain Dataset:
 **Features:**
 
-Angle / Energy / sEMG
+Angle / Energy / sEMG / Protective behavior (merged) label
 
-1-13 / 14-26 / 27-30
+1-13 / 14-26 / 27-30 / 31
 
 **Link:**
 
