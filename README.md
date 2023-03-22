@@ -12,7 +12,8 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 ## Original EmoPain Dataset:
 **Features:**
 
-X,Y,Z Coordinates / sEMG
+X,Y,Z Coordinates / sEMG / Protective behavior (merged) label 
+1-66 / 66-70 / 73
 
 **Link:**
 
