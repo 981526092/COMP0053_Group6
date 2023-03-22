@@ -82,6 +82,10 @@ We run example model on Leave-P-Out and Leave-One-Out Cross-Validation.
 - [Data visualisation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
 - [Data augmentation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
 
+## Best Model Weights
+This directory store our best model weights in hdf5 format.
+[Link](https://github.com/981526092/COMP0053_Group6/tree/main/Best_Model_Weights)
+
 ## Related References
 
 [1] Aung et al. 2014. ‘Automatic recognition of fear-avoidance behavior in chronic pain physical rehabilitation’. (https://dl.acm.org/citation.cfm?id=2686916) 
