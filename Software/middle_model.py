@@ -15,7 +15,7 @@ from re import U
 
 # Create a 1D CNN model with two parallel branches and a fusion layer
 def cnn_normal():
-    input_data = Input((180,70))
+    input_data = Input(shape=(180, 70))
 
     # Separating the inputs using the crop function
     input1 = crop(2, 0, 66)(input_data)

@@ -88,8 +88,7 @@ def segment_data(data: np.ndarray, window_size: int = 180, overlap_ratio: float 
     return np.array(windows)
 
 # Function to load data and perform preprocessing
-def load_data(filenames, data_set, downsampling = False, angle_energy = False,augment = False):
-    data_path = '../CoordinateData/'
+def load_data(filenames, data_set, downsampling = False, angle_energy = False,augment = False,data_path = '../CoordinateData/'):
     X_train_list = []
     y_train_list = []
 

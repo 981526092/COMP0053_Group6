@@ -1,1 +1,1 @@
-This directory is for storing model weight.
+This directory is for storing model weight for our best performed model.

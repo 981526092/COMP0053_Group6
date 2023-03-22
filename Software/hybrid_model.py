@@ -389,19 +389,10 @@ def build_bi_cnn_banet_model():
 
 
 def build_bi_cnn_banet_angle_model(first_cnn=64, second_cnn=32, lstm_units=32):
-    '''
-    Hyper-params list:
-    Epoch = 20
-    Optimizer = Adam
-    Initial learning rate = 0.0005
-    batch_size = 500
-    DO NOT CHANGE THIS FUNCTION
-    '''
-    timestep = 180   # length of an input frame
-    dimension = 30   # dimension of an input frame, 30 = 13 joint angles + 13 joint energies + 4 sEMG
-    BodyNum = 13     # number of body segments (different sensors) to consider
 
-    #Model 1: Temporal Information encoding model (keras Model API)
+    BodyNum = 13
+
+    #Model 1: Temporal Information encoding model
     # For angles
     singleinput = Input(shape=(180, 2,))
     lstm_units = lstm_units
