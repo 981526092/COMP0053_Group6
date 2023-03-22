@@ -14,7 +14,7 @@ https://wangchongyang.ai/EmoPainChallenge2020/
 
 X,Y,Z Coordinates / sEMG / Protective behavior (merged) label 
 
-1-66 / 66-70 / 73
+1-66 / 67-70 / 73
 
 **Link:**
 
@@ -23,7 +23,9 @@ X,Y,Z Coordinates / sEMG / Protective behavior (merged) label
 ## Energy & Angle EmoPain Dataset:
 **Features:**
 
-Energy / Angle / sEMG
+Angle / Energy / sEMG
+
+1-13 / 14-26 / 27-30
 
 **Link:**
 
@@ -33,7 +35,9 @@ Energy / Angle / sEMG
 
 **Features:**
 
-X,Y,Z Coordinates / sEMG / Energy / Angle 
+X,Y,Z Coordinates / sEMG / Protective behavior (merged) label / Angle / Energy
+
+1-66 / 67-70 / 73 / 79-91 / 92-104
 
 **Link:**
 
