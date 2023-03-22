@@ -46,11 +46,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 ## Tutorials
 
-- [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
-  - We implement EDA on the EmoPain Dataset.
-
-- [Angle & Energy Modality Transformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
-  - We implement X, Y, Z Coordinate to Angle & Energy Modality Transformation on the EmoPain Dataset.
+### Core Implementation
 
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
   - We run the Early Fusion pipeline on Stacked-Deep-LSTM-Coordinate, Stacked-Deep-LSTM-Angle, Random Forest, and AdaBoost models.
@@ -61,17 +57,25 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 - [Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Late_Fusion_Pipeline.ipynb)
   - We run the Late Fusion pipeline on RF-SVM Ensemble model with different ensemble strategies.
 
-- [Advanced Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
-  - We run the Advanced Late Fusion pipeline on Complex Ensemble models, utilizing confusion & metric weights with different ensemble strategies.
-
 - [Hybrid (Middle & Late) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Hybrid_Fusion_Pipeline.ipynb)
   - We run the Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
+
+### Advance Research
+
+- [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
+  - We implement EDA on the EmoPain Dataset.
+
+- [Angle & Energy Modality Transformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
+  - We implement X, Y, Z Coordinate to Angle & Energy Modality Transformation on the EmoPain Dataset.
 
 - [Cross Validation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/CV_Pipeline.ipynb)
   - We run example models on Leave-P-Out and Leave-One-Out Cross-Validation.
 
 - [SVM Perfomance Evaluation On difference Modalities trained](https://github.com/981526092/COMP0053_Group6/blob/main/Software/SVM_Performance_Pipeline.ipynb)
   - We train the SVM model with different modalities and evaluate the performance 
+
+- [Advanced Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
+  - We run the Advanced Late Fusion pipeline on Complex Ensemble models, utilizing confusion & metric weights with different ensemble strategies.
 
 ## Code
 
