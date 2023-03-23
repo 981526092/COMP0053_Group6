@@ -138,9 +138,9 @@ def flatten_data(X,y):
     return X_return, Y_return
 
 # Function to load raw data for specified participant numbers and data type
-def load_raw_data(participant_num, data_type):
+def load_raw_data(participant_num, data_type,data_path = '../CoordinateData/'):
     data = []
     for i in participant_num:
-        data.append(loadmat("../CoordinateData/"+data_type+"/"+i+".mat")['data'])
+        data.append(loadmat(data_path+data_type+"/"+i+".mat")['data'])
     return np.concatenate(data, axis=0)
 
