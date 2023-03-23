@@ -105,7 +105,7 @@ def model_pipeline(model, X_train, y_train, X_valid, y_valid, epoch=50, save_mod
         epochs=epoch,
         validation_data=(X_valid, y_valid),
         shuffle=False,
-        callbacks=[lr_scheduler,early_stopping],
+        callbacks=[lr_scheduler],
     )
     if save_model:
         model.save_weights('model' + '.hdf5')
