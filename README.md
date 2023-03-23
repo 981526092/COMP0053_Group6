@@ -48,6 +48,9 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 ### Core Implementation
 
+- [Hold Out Test on Validation Datasets of Best Models Weights ](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Best_Model_Weights_Pipeline.ipynb)
+  - We show the hold out test results of our best model weight.
+
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Early_Fusion_Pipeline.ipynb)
   - We run the Early Fusion pipeline on Stacked-Deep-LSTM-Coordinate, Stacked-Deep-LSTM-Angle, Random Forest, and AdaBoost models.
 
