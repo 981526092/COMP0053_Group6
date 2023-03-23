@@ -71,7 +71,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 - [Cross Validation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/CV_Pipeline.ipynb)
   - We run example models on Leave-P-Participant-Out Cross-Validation (LPPOCV) and Time_Series_Spilt_Cross_Validation (TSSCV)  Cross-Validation.
   
-- [Preliminary_Experiments in Segmentation and Downsampling](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Preliminary_Experiments_Segmentation_Pipeline.ipynb)
+- [Preliminary_Experiments in Segmentation and Downsampling](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Preliminary_Experiments_Pipeline.ipynb)
   - We conducted experiments to compare the performance of the model using frame-by-frame data versus segmentation data. Moreover, we compared the performance before and after downsampling.
 
 - [SVM Perfomance Evaluation On difference Modalities trained](https://github.com/981526092/COMP0053_Group6/blob/main/Software/SVM_Performance_Pipeline.ipynb)
