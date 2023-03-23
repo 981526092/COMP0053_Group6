@@ -114,6 +114,8 @@ Link: [Best Model Weights](https://github.com/981526092/COMP0053_Group6/tree/mai
 
 ## Related References
 
+### Main References
+
 [1] Aung et al. 2014. ‘Automatic recognition of fear-avoidance behavior in chronic pain physical rehabilitation’. (https://dl.acm.org/citation.cfm?id=2686916) 
 
 [2] Aung et al. 2016. ‘The Automatic Detection of Chronic Pain-Related Expression: Requirements, Challenges and the Multimodal EmoPain Dataset’. (https://ieeexplore.ieee.org/abstract/document/7173007) 
@@ -121,6 +123,30 @@ Link: [Best Model Weights](https://github.com/981526092/COMP0053_Group6/tree/mai
 [3] Wang et al. 2021. ‘Chronic-Pain Protective Behavior Detection with Deep Learning’. ACM HEALTH. (https://dl.acm.org/doi/abs/10.1145/3463508). 
 
 [4] Wang et al. 2021. ‘Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data’. IMWUT. (https://dl.acm.org/doi/abs/10.1145/3449068). 
+
+### Other References
+
+[1] Ayata, Deger, Yusuf Yaslan, and Mustafa E Kamasak. 2018. ‘Emotion based music recommendation system using wearable physiological sensors’. IEEE Transactions on Consumer Electronics 64 (2): 196--203.
+
+[2] Russell, James A. 1980. ‘A circumplex model of affect’. Journal of personality and social psychology 39 (6): 1161.
+
+[3] Lin, Chingshun, Mingyu Liu, Weiwei Hsiung, and Jhihsiang Jhang. 2016. ‘Music emotion recognition based on two-level support vector classification’. In 2016 International conference on machine learning and cybernetics (ICMLC), 1:375--389. IEEE.
+
+[4] Jung, Tzyy-Ping, Terrence J Sejnowski, and others. 2019. ‘Utilizing deep learning towards multi-modal bio-sensing and vision-based affective computing’. IEEE Transactions on Affective Computing 13 (1): 96--107.
+
+[5] Puri, Colin, Leslie Olson, Ioannis Pavlidis, James Levine, and Justin Starren. 2005. ‘StressCam: non-contact measurement of users' emotional states through thermal imaging’. In CHI'05 extended abstracts on Human factors in computing systems, 1725--1728.
+
+[6] Cicone, Antonio, and Hau-Tieng Wu. 2017. ‘How nonlinear-type time-frequency analysis can help in sensing instantaneous heart rate and instantaneous respiratory rate from photoplethysmography in a reliable way’. Frontiers in physiology 8: 701.
+
+[7] Yu, Zitong, Xiaobai Li, and Guoying Zhao. 2021. ‘Facial-video-based physiological signal measurement: Recent advances and affective applications’. IEEE Signal Processing Magazine 38 (6): 50--58.
+
+[8] Ekman, Paul. 1993. ‘Facial expression and emotion’. American psychologist 48 (4): 384.
+
+[9] Baltru{\v{s}}aitis, Tadas, Peter Robinson, and Louis-Philippe Morency. 2016. ‘Openface: an open source facial behavior analysis toolkit’. In 2016 IEEE winter conference on applications of computer vision (WACV), 1--10. IEEE.
+
+[10] Chawla, Nitesh V, Kevin W Bowyer, Lawrence O Hall, and W Philip Kegelmeyer. 2002. ‘SMOTE: synthetic minority over-sampling technique’. Journal of artificial intelligence research 16: 321--357.
+
+[11] He, Haibo, Yang Bai, Edwardo A Garcia, and Shutao Li. 2008. ‘ADASYN: Adaptive synthetic sampling approach for imbalanced learning’. In 2008 IEEE international joint conference on neural networks (IEEE world congress on computational intelligence), 1322--1328. IEEE.
 
 ...
 
