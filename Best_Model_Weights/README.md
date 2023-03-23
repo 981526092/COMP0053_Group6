@@ -1,4 +1,5 @@
 **This directory is for storing model weights in hdf5 format for our best performed models.**
+(P.S LPPOCV & TSSCV are not ready yet)
 
 **Filename start with:**
 
