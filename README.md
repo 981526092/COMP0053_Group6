@@ -65,7 +65,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 ### Advance Research
 
-- [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EMOPain_Pipeline.ipynb)
+- [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EmoPain_Pipeline.ipynb)
   - We implement EDA on the EmoPain Dataset.
 
 - [Angle & Energy Modality Transformation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Angle_Energy_Tranformation_Pipeline.ipynb)
