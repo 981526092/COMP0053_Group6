@@ -100,7 +100,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 - [Data Loader & Preprocessor](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_utils.py)
   - Handles data loading and preprocessing.
 
-- [Data Visualization](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_visualisation.py)
+- [Data & Results Visualization](https://github.com/981526092/COMP0053_Group6/blob/main/Software/visualisation_utils.py)
   - Provides functions for visualizing the dataset and model results.
 
 - [Data Augmentation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/data_augmentation.py)
