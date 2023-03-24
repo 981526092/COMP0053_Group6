@@ -8,7 +8,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 [EmoPain Dataset](https://wangchongyang.ai/EmoPainChallenge2020/)
 
-## Model Results
+## Model Results (Sorted By F1-Score)
 
 | Model                                 | Accuracy | F1 Score | Recall | Precision |
 |---------------------------------------|----------|----------|--------|-----------|
