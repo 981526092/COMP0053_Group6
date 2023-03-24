@@ -26,7 +26,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 | SVM                                   | 0.94     | 0.49     | 0.5    | 0.47      |
 | Stacked-Deep-LSTM-Coordinate          | 0.94     | 0.48     | 0.5    | 0.47      |
 | LSTM-BANet-Coordinate                 | 0.94     | 0.48     | 0.5    | 0.47      |
-| Random Forest                         | 0.76     | 0.49     | 0.54   | 0.51      |
+| Random Forest(Baseline)               | 0.76     | 0.49     | 0.54   | 0.51      |
 
 
 ## Datasets
