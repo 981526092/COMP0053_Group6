@@ -12,8 +12,8 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 | Model                                 | F1 Score | Recall | Precision | Accuracy | Fusion Level        |
 |---------------------------------------|----------|--------|-----------|----------|---------------------|
-| BI-CNN-BANet-Ensemble-Angle           | 0.76     | 0.83   | 0.72      | 0.93     | Hybrid-level fusion |
-| BI-CNN-BANet-Ensemble-Coordinate      | 0.73     | 0.83   | 0.69      | 0.92     | Hybrid-level fusion |
+| BI-BA-CNN-Angle                       | 0.76     | 0.83   | 0.72      | 0.93     | Hybrid-level fusion |
+| BI-BA-CNN-Coordinate                  | 0.73     | 0.83   | 0.69      | 0.92     | Hybrid-level fusion |
 | Adaboost-SVM-Ensemble                 | 0.73     | 0.72   | 0.74      | 0.94     | Late-level fusion   |
 | RF-SVM-Ensemble                       | 0.67     | 0.67   | 0.67      | 0.93     | Late-level fusion   |
 | CNN-Normal-Coordinate                 | 0.63     | 0.6    | 0.69      | 0.94     | Middle-level fusion |
