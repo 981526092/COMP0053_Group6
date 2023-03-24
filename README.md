@@ -8,6 +8,27 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 [EmoPain Dataset](https://wangchongyang.ai/EmoPainChallenge2020/)
 
+## Model Results
+
+| Model                                 | Accuracy | F1 Score | Recall | Precision |
+|---------------------------------------|----------|----------|--------|-----------|
+| BI-CNN-BANet-Ensemble-Angle           | 0.93     | 0.76     | 0.83   | 0.72      |
+| BI-CNN-BANet-Ensemble-Coordinate      | 0.92     | 0.74     | 0.69   | 0.69      |
+| Adaboost-SVM-Ensemble                 | 0.94     | 0.73     | 0.72   | 0.74      |
+| RF-SVM-Ensemble                       | 0.93     | 0.67     | 0.67   | 0.67      |
+| CNN-Normal-Coordinate                 | 0.94     | 0.63     | 0.6    | 0.69      |
+| Adaboost                              | 0.9      | 0.58     | 0.58   | 0.58      |
+| CNN-BANet-Coordinate                  | 0.94     | 0.57     | 0.55   | 0.71      |
+| Stacked Deep LSTM-Angle               | 0.84     | 0.58     | 0.66   | 0.57      |
+| Adaboost                              | 0.9      | 0.58     | 0.58   | 0.58      |
+| SVM(only sEMG data)                   | 0.94     | 0.72     | 0.72   | 0.72      |
+| SVM(only coordinate data)             | 0.94     | 0.49     | 0.5    | 0.47      |
+| SVM                                   | 0.94     | 0.49     | 0.5    | 0.47      |
+| Stacked-Deep-LSTM-Coordinate          | 0.94     | 0.48     | 0.5    | 0.47      |
+| LSTM-BANet-Coordinate                 | 0.94     | 0.48     | 0.5    | 0.47      |
+| Random Forest                         | 0.76     | 0.49     | 0.54   | 0.51      |
+
+
 ## Datasets
 
 ### 1. Original EmoPain Dataset:
