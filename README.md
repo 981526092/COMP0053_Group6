@@ -20,7 +20,6 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 | Adaboost                              | 0.58     | 0.58   | 0.58      | 0.9      |
 | CNN-BANet-Coordinate                  | 0.57     | 0.55   | 0.71      | 0.94     |
 | Stacked Deep LSTM-Angle               | 0.58     | 0.66   | 0.57      | 0.84     |
-| Adaboost                              | 0.58     | 0.58   | 0.58      | 0.9      |
 | SVM(only sEMG data)                   | 0.72     | 0.72   | 0.72      | 0.94     |
 | SVM(only coordinate data)             | 0.49     | 0.5    | 0.47      | 0.94     |
 | SVM                                   | 0.49     | 0.5    | 0.47      | 0.94     |
