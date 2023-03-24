@@ -83,8 +83,9 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 - [Hybrid (Middle & Late) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Hybrid_Fusion_Pipeline.ipynb)
   - We run the Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
+  
 
-### Advance Research
+### Other & Advanced Research
 
 - [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EmoPain_Pipeline.ipynb)
   - We implement EDA on the EmoPain Dataset.
@@ -103,7 +104,10 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 
 - [Advanced Late (Decision-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Advance_Late_Fusion_Pipeline.ipynb)
   - We run the Advanced Late Fusion pipeline on Complex Ensemble models, utilizing confusion & metric weights with different ensemble strategies.
-
+  
+- [Model Results Visualisation](https://github.com/981526092/COMP0053_Group6/blob/main/Software/Result_Visualisation_Pipeline.ipynb)
+  - We visualise the models results.
+  
 ...
 
 ## Code (Updating)
