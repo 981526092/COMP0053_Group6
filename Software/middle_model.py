@@ -13,8 +13,12 @@ from keras.models import Sequential
 from model_utils import crop
 from re import U
 
-# Create a 1D CNN model with two parallel branches and a fusion layer
 def cnn_normal():
+    """
+    Creates a 1D CNN model with two parallel branches and a fusion layer.
+    Returns:
+    keras.engine.training.Model: A 1D CNN model.
+    """
     input_data = Input(shape=(180, 70))
 
     # Separating the inputs using the crop function
@@ -69,7 +73,7 @@ def cnn_normal():
     return model
 
 
-
+# Part of the Model Code is from Chongyang Wang's Work: https://github.com/EnTimeMent/BANet
 def build_cnn_banet_model_middle_fusion():
     timestep = 180   # length of an input frame
     dimension = 66   # dimension of an input frame, 66 = 22 joints by 3 xyz coordinates, the 4 coordinates of the foot are removed.
@@ -422,7 +426,7 @@ def build_cnn_banet_model_middle_fusion():
     return model
 
 
-
+# Part of the Model Code is from Chongyang Wang's Work: https://github.com/EnTimeMent/BANet
 def build_lstm_banet_model_middle_fusion():
     timestep = 180   # length of an input frame
     dimension = 66   # dimension of an input frame, 66 = 22 joints by 3 xyz coordinates, the 4 coordinates of the foot are removed.

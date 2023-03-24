@@ -19,6 +19,7 @@ from keras.models import Sequential
 from re import U
 from model_utils import crop
 
+# Part of the Model Code is from Chongyang Wang's Work: https://github.com/EnTimeMent/BANet
 def build_bi_cnn_banet_model():
     '''
     Hyper-params list:
@@ -102,8 +103,6 @@ def build_bi_cnn_banet_model():
     SEMGout2 = multiply([SEMGout2, TemporalAttention_SEMG2])
     SEMGout2 = Lambda(lambda x: sum(x, axis=1, keepdims=True))(SEMGout2)
     upper_back = Permute((2, 1), input_shape=(1, lstm_units))(SEMGout2)
-
-
 
     x1 = crop(2, 0, 1)(inputs)
     y1 = crop(2, 22, 23)(inputs)
@@ -387,7 +386,7 @@ def build_bi_cnn_banet_model():
 
     return model
 
-
+# Part of the Model Code is from Chongyang Wang's Work: https://github.com/EnTimeMent/BANet
 def build_bi_cnn_banet_angle_model(first_cnn=64, second_cnn=32, lstm_units=32):
 
     BodyNum = 13
@@ -594,8 +593,6 @@ def build_bi_cnn_banet_angle_model(first_cnn=64, second_cnn=32, lstm_units=32):
     attentionresult = Flatten()(attentionresult)
     output1 = Dense(2, activation='softmax')(attentionresult)
 
-   
-    
     # Semg
 
     DATA_Semg = concatenate([Blast14, Blast15], axis=2)
