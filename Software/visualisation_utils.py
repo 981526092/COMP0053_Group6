@@ -11,29 +11,31 @@ def plot_target(y):
 
 
 def plot_confusion_matrix(confusion_matrix):
-    # Set the seaborn style and font size
     sns.set_style("whitegrid")
     sns.set(font_scale=1.2)
     fig, ax = plt.subplots(figsize=(8, 6))
+
     # Create heatmap
     sns.heatmap(confusion_matrix, annot=True, fmt='d', cmap='coolwarm', linewidths=0.5, cbar=False)
+
     # Set labels
     ax.set_ylabel('True label', fontsize=14)
     ax.set_xlabel('Predicted label', fontsize=14)
     ax.set_title('Confusion Matrix Heatmap', fontsize=16)
     ax.set_xticklabels(['0', '1'], fontsize=12)
     ax.set_yticklabels(['0', '1'], fontsize=12)
+
+    # Show the plot
     plt.show()
 
 
 def plot_model_scores(model_scores):
-    # Convert
+    # Convert to dataframe
     df = pd.DataFrame.from_dict(model_scores, orient='index', columns=['Accuracy', 'F1 Score', 'Recall', 'Precision'])
-    
-    # Reset
+
+    # Reset index and melt the dataframe
     df = df.reset_index().rename(columns={'index': 'Model'})
     df = pd.melt(df, id_vars=['Model'], var_name='Metric', value_name='Score')
-
 
     sns.set_style("whitegrid")
     sns.set(font_scale=1.2)
@@ -48,6 +50,7 @@ def plot_model_scores(model_scores):
     plt.title('Model Performance Metrics')
     plt.xticks(rotation=45, ha='right')
 
+
     # Get the maximum score for each metric
     max_scores = df.groupby('Metric')['Score'].transform(max)
 
@@ -59,6 +62,9 @@ def plot_model_scores(model_scores):
         y = max_score
         ax.plot([x], [y], marker='*', markersize=15, markeredgewidth=2, markeredgecolor='black', zorder=10)
         ax.annotate(f'{y:.2f}', xy=(x, y), xytext=(x, y+0.02), fontsize=12, va='center', ha='center', fontweight='bold')
+
+    # Move the legend outside of the graph
+    plt.legend(bbox_to_anchor=(1.01, 1), loc='upper left', borderaxespad=0.)
 
 
     plt.show()
