@@ -13,7 +13,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 | Model                                 | Accuracy | F1 Score | Recall | Precision |
 |---------------------------------------|----------|----------|--------|-----------|
 | BI-CNN-BANet-Ensemble-Angle           | 0.93     | 0.76     | 0.83   | 0.72      |
-| BI-CNN-BANet-Ensemble-Coordinate      | 0.92     | 0.74     | 0.69   | 0.69      |
+| BI-CNN-BANet-Ensemble-Coordinate      | 0.92     | 0.73     | 0.83   | 0.69      |
 | Adaboost-SVM-Ensemble                 | 0.94     | 0.73     | 0.72   | 0.74      |
 | RF-SVM-Ensemble                       | 0.93     | 0.67     | 0.67   | 0.67      |
 | CNN-Normal-Coordinate                 | 0.94     | 0.63     | 0.6    | 0.69      |
