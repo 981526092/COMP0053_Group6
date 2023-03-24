@@ -65,7 +65,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
 **Link:** [New EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/AllData)
 
 
-## Tutorials (Updating)
+## Tutorials
 
 ### Core Implementation
 
@@ -85,7 +85,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
   - We run the Hybrid Fusion pipeline on BI-CNN-BANet-Ensemble-Coordinate and BI-CNN-BANet-Ensemble-Angle models.
   
 
-### Other & Advanced Research
+### Other & Advanced Implementation
 
 - [Exploratory Data Analysis (EDA) on EmoPain Dataset](https://github.com/981526092/COMP0053_Group6/blob/main/Software/EDA_EmoPain_Pipeline.ipynb)
   - We implement EDA on the EmoPain Dataset.
@@ -110,7 +110,7 @@ This repository contains tutorials and code for Exploratory Data Analysis (EDA),
   
 ...
 
-## Code (Updating)
+## Code
 
 - [Early (Feature-Level) Fusion Models](https://github.com/981526092/COMP0053_Group6/blob/main/Software/early_model.py)
   - Contains the implementation of Early Fusion models.
