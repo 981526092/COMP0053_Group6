@@ -1,0 +1,15 @@
+COMP0053_Group6 Part2 Datasets Downloads Link
+
+
+Datasets
+----------------------------------------------------------
+
+AllData:
+https://liveuclac-my.sharepoint.com/:u:/g/personal/zcabzwu_ucl_ac_uk/EeUUpYS8ZRpGvPJD97VimagBeqwdSi4tiQvD7W88GEC-lQ?e=vEUaRb
+
+AngleData:
+https://liveuclac-my.sharepoint.com/:u:/g/personal/zcabzwu_ucl_ac_uk/Ecv8PmH83Y9AjnS49SccQdUB3g9LZHKgDFFsGRQyH8m8ug?e=afL2j7
+
+
+CoordinateData:
+https://liveuclac-my.sharepoint.com/:u:/g/personal/zcabzwu_ucl_ac_uk/Ecv0hPWsEx5GkNRBr5BssoEBvXo2D2fjo8nQKRaitaRrrg?e=ELwtD6
