@@ -1,8 +1,13 @@
-# COMP0053_Group6 EmoPain Challenge
+# EmoPain-Fusion  
+**COMP0053 – Group 6 • University Project**
+
+> **Detecting chronic-pain protective behaviour with multimodal deep learning and fusion strategies**
 
 **This project focuses on detecting chronic pain-related protective behavior using the EmoPain Dataset through various fusion techniques and deep learning models.**
 
-This repository contains tutorials and code for Exploratory Data Analysis (EDA), Early (Feature-Level), Middle (Model-Level), Late (Decision-Level), and Hybrid (Middle & Late) Fusion Models, as well as cross-validation methods used in our project.
+This repository was developed for the COMP0053 module (BSc Computer Science) as part of a university coursework project.  
+Our goal is to recognise **protective behaviours** in people with chronic pain by leveraging the **EmoPain dataset** and a spectrum of fusion techniques (early, middle, late and hybrid) built on classical ML and modern deep-learning models.
+
 
 ## EmoPain Dataset Website Link
 
